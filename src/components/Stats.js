@@ -6,7 +6,7 @@ import { faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons';
 
 const StatsList = (props) => {
     return (
-        <div className="flex w-full justify-around px-4">
+        <div className="flex flex-col my-4 w-full justify-around px-4 md:flex-row">
             <Stats value="1,200+" category="Meals Provided" icon={faUtensils}></Stats>
             <Stats value="12+" category="Towns Visited" icon={faMapMarkedAlt}></Stats>
             <Stats value="50+" category="Volunteers" icon={faPeopleCarry}></Stats>
