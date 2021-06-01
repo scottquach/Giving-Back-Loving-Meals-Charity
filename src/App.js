@@ -1,22 +1,14 @@
 import './App.css';
 import Navigation from './components/Navigation';
-import { StatsList } from './components/Stats';
-import Hero from './components/Hero';
-import Footer from './components/Footer';
+import AboutUs from './pages/AboutUs';
+import Landing from './pages/Landing';
 
 function App() {
     return (
-        <div className="flex flex-col w-screen h-screen ">
+        <div className="flex flex-col w-full h-full ">
             <Navigation></Navigation>
-            <div className="flex flex-1 flex-col">
-                <div className="h-3/5">
-                    <Hero></Hero>
-                </div>
-                <div className="flex flex-1 justify-center items-center">
-                    <StatsList></StatsList>
-                </div>
-                <Footer></Footer>
-            </div>
+            {/* <Landing></Landing> */}
+            <AboutUs></AboutUs>
         </div>
     );
 }

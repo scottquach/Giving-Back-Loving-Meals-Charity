@@ -1,4 +1,3 @@
-import { Dialog, Menu } from '@headlessui/react';
 import { useState } from 'react';
 
 const Navigation = () => {
