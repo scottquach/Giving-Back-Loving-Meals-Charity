@@ -1,8 +1,9 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     return (
-        <div className="flex p-2 shadow items-center md:py-4">
+        <div className="flex ml-2 p-2 shadow items-center md:py-4">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 hidden md:block text-red-500"
@@ -15,16 +16,18 @@ const Navigation = () => {
                     clipRule="evenodd"
                 />
             </svg>
-            <div className="mr-auto font-bold text-xl leading-tight ml-2">
+            <Link to="/" className="mr-auto font-bold text-xl leading-tight ml-2">
                 Giving Back <br className="md:hidden"></br> <span className="text-purple-700">Loving</span> Meals
-            </div>
+            </Link>
 
             <div className="hidden md:flex">
                 <div className="text-lg mx-2 px-4 font-medium rounded-full border-2 border-gray-600 hover:border-purple-500 cursor-pointer hover:text-purple-700">
                     Donate
                 </div>
                 <div className="text-lg mx-3 font-medium cursor-pointer hover:text-purple-700">Contact</div>
-                <div className="text-lg mx-3 font-medium cursor-pointer hover:text-purple-700">About Us</div>
+                <div className="text-lg mx-3 font-medium cursor-pointer hover:text-purple-700">
+                    <Link to="/about">About Us</Link>
+                </div>
             </div>
             <NavigationMenu></NavigationMenu>
         </div>
