@@ -26,7 +26,7 @@ const HeroMessage = () => {
     return (
         <div className="my-4">
             <div className="text-center text-3xl font-bold text-purple-700 mb-2 md:text-4xl md:text-left">
-                Giving Back Meals<br className="md:hidden"></br> Since 2016
+                Giving Back Meals<br className="md:hidden"></br> Since ....
             </div>
             <div className="text-center md:w-2/3 md:text-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque auctor elit, ac dictum eros pulvinar
