@@ -24,22 +24,21 @@ const Hero = () => {
 
 const HeroMessage = () => {
     return (
-        <div className="my-4">
-            <div className="text-center text-3xl font-bold text-purple-700 mb-2 md:text-4xl md:text-left">
-                Giving Back Meals<br className="md:hidden"></br> Since ....
+        <div className="my-6 px-2">
+            <div className="text-left text-2xl font-bold mb-2 md:text-4xl md:text-left">
+                <span class="text-purple-700">Giving Back</span> Meals<br className="md:hidden"></br> For 20 Years
             </div>
-            <div className="text-center md:w-2/3 md:text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque auctor elit, ac dictum eros pulvinar
-                in. Pellentesque ut accumsan risus, ac posuere magna. Aenean ut elementum arcu. Vestibulum ut nulla turpis. In et
-                risus ultricies arcu hendrerit fringilla at a nisl.
-            </div>
+            <div className="text-left md:w-2/3 md:text-left">
+                Giving Back charity group was found by a refugee woman named Anna. Anna Tran came to the United States as a
+                refugee in the early year 1980s. During her first trip back to Vietnam she noticed many children not in school for their school age.
+                Anna built the elementary school for the village. <br></br><br></br> The funding was eventually named Giving Back.             </div>
         </div>
     );
 };
 
 const HeroAction = () => {
     return (
-        <div className="flex flex-col items-center space-x-4 space-y-4 my-8 md:flex-row md:space-y-0 ">
+        <div className="flex flex-row items-baseline space-x-4 space-y-4 my-8 md:space-y-0 text-sm md:text-base">
             <a
                 className="py-2 px-4 flex items-center font-semibold hover:bg-blue-700 hover:border-blue-500  hover:text-white shadow-md border-2  rounded-lg group transition-all duration-100"
                 href="https://www.facebook.com/groups/2834877599904077"
@@ -48,9 +47,9 @@ const HeroAction = () => {
                 <FontAwesomeIcon className="mr-2 text-blue-700 group-hover:text-white" icon={faFacebook} />
                 <div>Visit us on Facebook</div>
             </a>
-            <button className="py-2 px-4 flex items-center font-semibold hover:bg-red-500 hover:border-red-500  hover:text-white shadow-md border-2 rounded-lg group transition-all duration-100">
-                <FontAwesomeIcon className="mr-2 text-red-500 group-hover:text-white" icon={faHandHoldingHeart} />
-                <div>Donate</div>
+            <button className="py-2 px-4 flex items-center font-semibold bg-red-500  hover:border-red-300  text-white shadow-md border-2 rounded-lg group transition-all duration-100">
+                <FontAwesomeIcon className="mr-2 "  icon={faHandHoldingHeart} />
+                <div>Support</div>
             </button>
         </div>
     );

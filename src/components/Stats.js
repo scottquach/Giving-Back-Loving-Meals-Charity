@@ -7,12 +7,12 @@ import { faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons';
 const StatsList = (props) => {
     return (
         <div className="mb-16">
-            <div className="flex flex-col items-center mt-14">
+            <div className="flex flex-col items-center mt-12">
                 <div className="font-bold mb-4 text-purple-700">WHAT WE DO</div>
-                <div className="text-2xl">You can help lots of people by donating a little</div>
+                <div className="text-2xl text-center">You can help lots of people by donating a little</div>
             </div>
 
-            <div className="flex py-10 px-8 mt-8 bg-purple-100 rounded">
+            <div className="flex flex-col py-6 px-8 mt-8 mx-4 bg-purple-100 rounded md:flex-row md:py-4">
                 <Stats value="$3,600" description="Donations received in the last year" icon={faHandHoldingHeart}></Stats>
                 <Stats value="3,000+" description="Meals provided in the last year" icon={faUtensils}></Stats>
                 <Stats value="4" description="Sustained free meal sites in Vietnam" icon={faMapMarkedAlt}></Stats>
@@ -29,12 +29,12 @@ const StatsList = (props) => {
 
 const Stats = ({ value, description, icon }) => {
     return (
-        <div className="flex flex-col items-center mx-8">
+        <div className="flex flex-col items-center mx-8 my-4">
             <div className="flex items-baseline text-purple-600">
                 <FontAwesomeIcon className="mr-3 text-xl" icon={icon}></FontAwesomeIcon>
-                <div className="font-bold text-3xl mb-2">{value}</div>
+                <div className="font-bold text-3xl mb-1 md:mb-3">{value}</div>
             </div>
-            <div className="text-lg font-semibold">{description}</div>
+            <div className="text-lg font-semibold text-center">{description}</div>
         </div>
         // <div className="flex flex-col items-center mx-4 group hover:bg-purple-700 hover:shadow-xl rounded-md p-4 transition-all duration-100">
         //     <div className="font-bold text-6xl text-purple-700 group-hover:text-white">{value}</div>
