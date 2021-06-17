@@ -9,6 +9,7 @@ function App() {
         <Router>
             <div className="flex flex-col w-full h-full ">
                 <Navigation></Navigation>
+                <div className="h-14"></div>
                 <Switch>
                     <Route path="/about">
                         <AboutUs></AboutUs>
