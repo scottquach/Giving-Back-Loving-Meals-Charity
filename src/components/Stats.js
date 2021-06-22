@@ -8,8 +8,8 @@ const StatsList = (props) => {
     return (
         <div className="mb-16">
             <div className="flex flex-col items-center mt-12">
-                <div className="font-bold mb-4 text-purple-700">WHAT WE DO</div>
-                <div className="text-2xl text-center">You can help lots of people by donating a little</div>
+                <div className="font-extrabold text-2xl mb-3 text-purple-700">WHAT WE DO</div>
+                <div className="text-2xl text-gray-700 mb-4 text-center">You can help lots of people by donating a little</div>
             </div>
 
             <div className="flex flex-col py-6 px-8 mt-8 mx-4 bg-purple-100 rounded md:flex-row md:py-4">

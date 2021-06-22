@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import image from '../images/jason-blackeye-IajNM5tQxdM-unsplash.jpg';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import TeamPhoto from '../images/about_team.jpg';
 
 const Hero = () => {
     return (
@@ -56,12 +57,12 @@ const HeroAction = () => {
 };
 
 const HeroImages = () => {
-    // return <img className="block h-full w-full object-cover" src={image}></img>;
     return (
         <img
-            className="block h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80A"
-        ></img>
+            className="block h-full w-full object-contain"
+            src={TeamPhoto}
+            alt="Could not load photo"
+        />
     );
 };
 
