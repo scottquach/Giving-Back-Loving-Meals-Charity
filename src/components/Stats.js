@@ -6,7 +6,7 @@ import { faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons';
 
 const StatsList = (props) => {
     return (
-        <div className="mb-16">
+        <div className="mb-12">
             <div className="flex flex-col items-center mt-12">
                 <div className="font-extrabold text-2xl mb-3 text-purple-700">WHAT WE DO</div>
                 <div className="text-2xl text-gray-700 mb-4 text-center">You can help lots of people by donating a little</div>
