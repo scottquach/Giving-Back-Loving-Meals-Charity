@@ -1,8 +1,8 @@
-import TeamPhoto from '../images/about_team.jpg';
+import TeamPhoto from '../images/founder.jpg';
 
 const OurFounder = () => {
     return (
-        <div className="grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 px-8 md:px-44 mb-12">
+        <div className="grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 px-8 md:px-44 mb-10" >
             <div className="flex flex-col items-start md:mr-8">
                 <div className="font-bold text-2xl mb-3 mt-8 text-purple-700">Our Founder</div>
                 <div>
@@ -12,7 +12,7 @@ const OurFounder = () => {
                     building the school, Anna continues to provide help relief to the needy families.
                 </div>
             </div>
-            <img className="mt-8 md:ml-16" src={TeamPhoto} />
+            <img className="mt-8 md:ml-16 h-96"  src={TeamPhoto} />
         </div>
     );
 };
