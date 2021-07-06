@@ -16,7 +16,9 @@ const Navigation = () => {
             </Link>
 
             <div className="md:flex">
-                <div className="text-lg mx-2 px-4 font-medium rounded-full cursor-pointer border-2  bg-red-500 hover:border-red-300 text-white">Support</div>
+                <div className="text-lg mx-2 px-4 font-medium rounded-full cursor-pointer border-2  bg-red-500 hover:border-red-300 text-white">
+                    <Link to="/support">Support</Link>
+                </div>
                 <div className="hidden md:block text-lg mx-3 font-medium cursor-pointer hover:text-purple-700 ">Contact</div>
                 <div className="hidden md:block text-lg mx-3 font-medium cursor-pointer hover:text-purple-700">
                     <Link to="/about">About Us</Link>

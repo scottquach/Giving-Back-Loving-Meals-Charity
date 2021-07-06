@@ -5,6 +5,7 @@ import image from '../images/jason-blackeye-IajNM5tQxdM-unsplash.jpg';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import TeamPhoto from '../images/about_team.jpg';
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -50,7 +51,7 @@ const HeroAction = () => {
             </a>
             <button className="py-2 px-4 flex items-center font-semibold bg-red-500  hover:border-red-300  text-white shadow-md border-2 rounded-lg group transition-all duration-100">
                 <FontAwesomeIcon className="mr-2 "  icon={faHandHoldingHeart} />
-                <div>Support</div>
+                    <NavLink to="/support">Support</NavLink>
             </button>
         </div>
     );

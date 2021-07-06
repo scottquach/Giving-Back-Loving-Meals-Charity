@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import AboutUs from './pages/AboutUs';
 import Landing from './pages/Landing';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Support } from './pages/Support';
 
 function App() {
     return (
@@ -13,6 +14,9 @@ function App() {
                 <Switch>
                     <Route path="/about">
                         <AboutUs></AboutUs>
+                    </Route>
+                    <Route path="/support">
+                        <Support></Support>
                     </Route>
                     <Route path="/">
                         <Landing></Landing>
